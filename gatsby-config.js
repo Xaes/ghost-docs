@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    siteTitle: `Rocket Docs`,
-    defaultTitle: `Rocket Docs`,
-    siteTitleShort: `Rocket Docs`,
-    siteDescription: `Out of the box Gatsby Theme for creating documentation websites easily and quickly`,
-    siteUrl: `https://rocketdocs.netlify.com`,
-    siteAuthor: `@rocketseat`,
+    siteTitle: `Xaes - Ghost Docs`,
+    defaultTitle: `Xaes - Ghost Docs`,
+    siteTitleShort: `Xaes - Ghost Docs`,
+    siteDescription: ``,
+    siteUrl: `https://ghost.xaes.dev`,
+    siteAuthor: `Diego Balmaceda`,
     siteImage: `/banner.png`,
     siteLanguage: `en`,
-    themeColor: `#8257E6`,
+    themeColor: `#0575E6`,
     basePath: `/`,
   },
   plugins: [
@@ -33,12 +33,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-sitemap`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        // trackingId: ``,
-      },
-    },
     `gatsby-plugin-remove-trailing-slashes`,
     {
       resolve: `gatsby-plugin-canonical-urls`,
