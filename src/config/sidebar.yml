@@ -1,24 +1,26 @@
-# Sidebar navigation
-
 - label: 'Introduction'
   link: '/'
-- label: 'Getting started'
-  link: '/getting-started'
-- label: Usage
+- label: Valkyrie
   items:
-    - label: 'Creating docs'
-      link: '/usage/creating-docs'
-    - label: 'Navigation'
-      link: '/usage/navigation'
-    - label: 'Shadowing'
-      link: '/usage/shadowing'
-- label: More
+    - label: 'Installation'
+      link: '/valkyrie/installation'
+    - label: 'Customization'
+      link: '/valkyrie/customization'
+    - label: 'Changelog'
+      link: '/valkyrie/changelog'
+- label: Athena
   items:
-    - label: FAQ
-      link: /faq
-    - label: Changelog
-      link: /changelog
-- label: Community
+    - label: 'Installation'
+      link: '/athena/installation'
+    - label: 'Customization'
+      link: '/athena/customization'
+    - label: 'Changelog'
+      link: '/athena/changelog'
+- label: Horus
   items:
-    - label: 'Github'
-      link: https://github.com/rocketseat/gatsby-themes
+    - label: 'Installation'
+      link: '/horus/installation'
+    - label: 'Customization'
+      link: '/horus/customization'
+    - label: 'Changelog'
+      link: '/horus/changelog'
