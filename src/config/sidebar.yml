@@ -8,6 +8,8 @@
       link: "/valkyrie/customization"
     - label: "Changelog"
       link: "/valkyrie/changelog"
+    - label: "Custom Templates"
+      link: "/valkyrie/customtemplates"
 - label: Athena
   items:
     - label: "Installation"
