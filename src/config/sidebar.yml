@@ -14,19 +14,17 @@
       link: "/valkyrie/customtemplates"
     - label: "Credits"
       link: "/valkyrie/credits"
-- label: Athena
-  items:
-    - label: "Installation"
-      link: "/athena/installation"
-    - label: "Customization"
-      link: "/athena/customization"
-    - label: "Changelog"
-      link: "/athena/changelog"
 - label: Heimdall
   items:
+    - label: "Features"
+      link: "/heimdall/features"
     - label: "Installation"
       link: "/heimdall/installation"
     - label: "Customization"
       link: "/heimdall/customization"
     - label: "Changelog"
       link: "/heimdall/changelog"
+    - label: "Custom Templates"
+      link: "/heimdall/customtemplates"
+    - label: "Credits"
+      link: "/heimdall/credits"
