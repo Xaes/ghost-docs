@@ -1,26 +1,26 @@
-- label: 'Introduction'
-  link: '/'
+- label: "Introduction"
+  link: "/"
 - label: Valkyrie
   items:
-    - label: 'Installation'
-      link: '/valkyrie/installation'
-    - label: 'Customization'
-      link: '/valkyrie/customization'
-    - label: 'Changelog'
-      link: '/valkyrie/changelog'
+    - label: "Installation"
+      link: "/valkyrie/installation"
+    - label: "Customization"
+      link: "/valkyrie/customization"
+    - label: "Changelog"
+      link: "/valkyrie/changelog"
 - label: Athena
   items:
-    - label: 'Installation'
-      link: '/athena/installation'
-    - label: 'Customization'
-      link: '/athena/customization'
-    - label: 'Changelog'
-      link: '/athena/changelog'
-- label: Horus
+    - label: "Installation"
+      link: "/athena/installation"
+    - label: "Customization"
+      link: "/athena/customization"
+    - label: "Changelog"
+      link: "/athena/changelog"
+- label: Heimdall
   items:
-    - label: 'Installation'
-      link: '/horus/installation'
-    - label: 'Customization'
-      link: '/horus/customization'
-    - label: 'Changelog'
-      link: '/horus/changelog'
+    - label: "Installation"
+      link: "/heimdall/installation"
+    - label: "Customization"
+      link: "/heimdall/customization"
+    - label: "Changelog"
+      link: "/heimdall/changelog"

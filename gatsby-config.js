@@ -15,19 +15,18 @@ module.exports = {
         {
             resolve: `@rocketseat/gatsby-theme-docs`,
             options: {
+                basePath: `/`,
                 configPath: `src/config`,
                 docsPath: `src/docs`,
-                githubUrl: `https://github.com/rocketseat/gatsby-themes`,
-                baseDir: `examples/gatsby-theme-docs`,
             },
         },
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
-                name: `Rocketseat Gatsby Themes`,
-                short_name: `RS Gatsby Themes`,
+                name: `Xaes - Ghost Docs`,
+                short_name: `Xaes - Ghost Docs`,
                 start_url: `/`,
-                background_color: `#ffffff`,
+                background_color: `#0575E6`,
                 display: `standalone`,
                 icon: `static/favicon.png`,
             },
@@ -37,7 +36,7 @@ module.exports = {
         {
             resolve: `gatsby-plugin-canonical-urls`,
             options: {
-                siteUrl: `https://rocketdocs.netlify.com`,
+                siteUrl: `https://ghost.xaes.dev`,
             },
         },
         `gatsby-plugin-offline`,
