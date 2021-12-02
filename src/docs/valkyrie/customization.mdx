@@ -60,13 +60,18 @@ If you want to display comments on your posts. Valkyrie has a Disqus partial rea
 - Open the `content-cta.hbs` file located at your `valkyrie/partials` directory. Paste the your Disqus site name in line 12 between the double quotes of `shortname`.
 
 ```html title=valkyrie/partials/content-cta.hbs highlight={12}
-<article>{{{content}}}</article>
+<article>
+    {{{content}}}
+</article>
 
 {{! Article Bottom - Go to partials/article-bottom.hbs to view this partial. }}
-{{> "article-bottom"}} {{! Next / Prev Post - Go to partials/nextprev.hbs to
-view this partial. }} {{> "nextprev"}} {{! Disqus - Go to partials/disqus.hbs to
-view this partial. Remove the "!" to activate this partial}} {{> "disqus"
-shortname=""}}
+{{> "article-bottom"}}
+
+{{! Next / Prev Post - Go to partials/nextprev.hbs to view this partial. }}
+{{> "nextprev"}}
+
+{{! Disqus - Go to partials/disqus.hbs to view this partial. Remove the "!" to activate this partial}}
+{{> "disqus" shortname=""}}
 ```
 
 - Rezip the theme, and upload it again to your blog.
@@ -135,6 +140,20 @@ If you are a developer and want to display your code in a nice way, Valkyrie com
 ```
 
 Prism needs to know which languague you want to highlight. As last step you need to specify it as a class value on the code tag. In this case the `x`'s on `language-xxxx` need to be replaced by the language name. For example, if you want to highlight **CSS** code, the class value would be: `language-css`. After that, write your code inside the code tag. For more information and know about supported languages lookup the Prism documentation [here](https://prismjs.com/). Valkyrie has also installed the line enumeration plugin, you can activate it by adding the `line-numbers` class on the pre tag.
+
+## NodeJS Tasks
+
+**Note**: This section is intended for people that want to further extend the theme and **might require a little bit of development experience**.
+
+Valkyrie as pre-defined NodeJS tasks to help you with the development / extension process. To make use of them, please make sure to have Yarn (v. 1.22.10) and NodeJS (v. 14.17) installed. I recommend using [NVM](https://github.com/nvm-sh/nvm) (Node Version Manager to install NodeJS in your system).
+
+| Task Name              | Description                        |
+| ---------------------- | ---------------------------------- |
+| dev                    | Watches for any file change and them generates a new version of CSS and JS. The output directory is located at `assets/built`. |
+| zip                    | Does the same as `dev`, but also autoprefixes, and uglifies CSS / JS files. At the end, it creates a ZIP file located at `dist/` folder and ignores non-essential files (`node_modules`, etc.). |
+| test                   | Test the theme with GScan to check for Ghost Compatibility issues. |
+
+To run any of the tasks you can run the following command in a terminal inside the Valkyrie theme files: `yarn <task name>`. Ex: `yarn dev`.
 
 ## Translations
 
