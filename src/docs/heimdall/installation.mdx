@@ -1,0 +1,55 @@
+---
+title: Installation - Heimdall
+description: Steps on how to install heimdall on your Ghost Instance.
+---
+
+1. Download the heimdall Theme ZIP file from ThemeForest.
+
+2. Inside the ZIP file you will find 4 folders: `license`, `docs`, `heimdall`, `media` and 1 ZIP file called `heimdall.zip`. Extract the whole folder that contains the previously mentioned files.
+
+3. Navigate to the **Integrations** section on your Ghost Admin Dashboard.
+
+4. Click on **Custom Integration** and write a name like "Search".
+
+5. Copy the Content API Key and the API URL.
+
+6. With your favorite code editor open the `default.hbs` file located at ` heimdall/` directory.
+
+7. On line **49**, **50** paste your API Key and API URL on the correspondant place. For example:
+
+```html title=heimdall/default.hbs highlight={14,15}
+<body class="{{body_class}}">
+
+    {{> navbar }}
+    {{> search-panel }}
+
+    <main class="z-20 bg-white-1 dark:bg-black-1 transition-all space-y-16 lg:space-y-36">
+        {{{body}}}
+        {{> footer}}
+    </main>
+
+    {{{block "index-scripts"}}}
+    {{{block "post-scripts"}}}
+    <script>
+        var SEARCH_API_KEY = "**YOUR API KEY HERE**";
+        var SEARCH_API_URL = "**YOUR API URL HERE**";
+    </script>
+    <script src="{{asset "built/js/search.js"}}"></script>
+    <script src="{{asset "built/js/main.js"}}"></script>
+
+    {{ghost_foot}}
+
+</body>
+```
+
+8. Save the document. ZIP the theme.
+
+9. Navigate to the administration panel of your Ghost Blog. Then, go to the **Settings** section, located at the sidebar and click on **Design**. Click on **Change Theme** and click on the green button that says: **Upload Theme**.
+
+10. A dialog asking for a ZIP file will prompt. Select the `heimdall.zip` you created in step **8**.
+
+11. Now, you'll need to upload the `routes.yaml` file to your Ghost Dashboard in order to display Sign Up, Sign In and Profile page. To do so, head over to your **Settings Panel** and click on **Labs**.
+
+12. On the bottom side of the screen click a button that says **Upload routes YAML**, select the `routes.yaml` file that's located at the root of your Heimdall directory.
+
+13. That's it. You are ready to go with your new blog.

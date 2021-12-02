@@ -32,15 +32,16 @@ To use the logo switcher, follow these steps:
 
 ```html title=valkyrie/partials/navbar.hbs
 <a class="navbar-brand" href="{{@site.url}}">
-    <img alt="{{@site.title}}" class="img-fluid lazy logo-dark" src="{{asset "images/logo-dark.png"}}" />
-    <img alt="{{@site.title}}" class="img-fluid lazy logo-light" src="{{asset "images/logo-light.png"}}" />
-    <!-- SINGLE LOGO 
+  <img alt="{{@site.title}}" class="img-fluid lazy logo-dark" src="{{asset
+  "images/logo-dark.png"}}" /> <img alt="{{@site.title}}" class="img-fluid lazy
+  logo-light" src="{{asset "images/logo-light.png"}}" />
+  <!-- SINGLE LOGO 
         <img alt="{{@site.title}}" class="img-fluid lazy" src="{{@site.logo}}" />
     -->
 </a>
 ```
 
-- In order to activate the logo support, go to your Ghost Admin Dashboard and upload **any** version of your logo (Valkyrie only needs to detect whether if you want to use a logo or not. So, it doesn't matters which one you upload from the dashboard, the theme will still use those images you copied and renamed on step 1 and 2).
+- In order to activate the logo support, go to your Ghost Admin Dashboard and upload **any** version of your logo (Valkyrie only needs to detect whether if you want to use a logo or not. So, it doesn't matters which one you upload from the dashboard, the theme will still use those images you copied and renamed on step **1** and **2**).
 
 - Rezip the theme, and upload it again to your blog.
 
@@ -59,18 +60,13 @@ If you want to display comments on your posts. Valkyrie has a Disqus partial rea
 - Open the `content-cta.hbs` file located at your `valkyrie/partials` directory. Paste the your Disqus site name in line 12 between the double quotes of `shortname`.
 
 ```html title=valkyrie/partials/content-cta.hbs highlight={12}
-<article>
-    {{{content}}}
-</article>
+<article>{{{content}}}</article>
 
 {{! Article Bottom - Go to partials/article-bottom.hbs to view this partial. }}
-{{> "article-bottom"}}
-
-{{! Next / Prev Post - Go to partials/nextprev.hbs to view this partial. }}
-{{> "nextprev"}}
-
-{{! Disqus - Go to partials/disqus.hbs to view this partial. Remove the "!" to activate this partial}}
-{{> "disqus" shortname=""}}
+{{> "article-bottom"}} {{! Next / Prev Post - Go to partials/nextprev.hbs to
+view this partial. }} {{> "nextprev"}} {{! Disqus - Go to partials/disqus.hbs to
+view this partial. Remove the "!" to activate this partial}} {{> "disqus"
+shortname=""}}
 ```
 
 - Rezip the theme, and upload it again to your blog.
@@ -123,8 +119,7 @@ This only will take effect if you have the Color Selector featured disabled in V
 - Replace the color of line **2** by any other available (green, blue, purple and orange / dark and light). For example:
 
 ```html title=valkyrie/partials/theme-colors.hbs highlight={2}
-{{! You can also use: brown, green, purple, red. And: dark, light. }}
-brown dark
+{{! You can also use: brown, green, purple, red. And: dark, light. }} brown dark
 ```
 
 - Rezip the theme, and upload it again to your blog.
