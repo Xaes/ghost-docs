@@ -19,12 +19,12 @@ To use the logo switcher, follow these steps:
 
 ```html title=valkyrie/partials/navbar.hbs highlight={2,5,7}
 <a class="navbar-brand" href="{{@site.url}}">
-  <!-- DUAL LOGO SWITCHER
-    <img alt="{{@site.title}}" class="img-fluid lazy logo-dark" src="{{asset "images/logo-dark.png"}}" />
-    <img alt="{{@site.title}}" class="img-fluid lazy logo-light" src="{{asset "images/logo-light.png"}}" />
+    <!-- DUAL LOGO SWITCHER
+      <img alt="{{@site.title}}" class="img-fluid lazy logo-dark" src="{{asset "images/logo-dark.png"}}" />
+      <img alt="{{@site.title}}" class="img-fluid lazy logo-light" src="{{asset "images/logo-light.png"}}" />
     -->
-  <!-- SINGLE LOGO -->
-  <img alt="{{@site.title}}" class="img-fluid lazy" src="{{@site.logo}}" />
+    <!-- SINGLE LOGO -->
+    <img alt="{{@site.title}}" class="img-fluid lazy" src="{{@site.logo}}" />
 </a>
 ```
 
@@ -32,11 +32,10 @@ To use the logo switcher, follow these steps:
 
 ```html title=valkyrie/partials/navbar.hbs
 <a class="navbar-brand" href="{{@site.url}}">
-  <img alt="{{@site.title}}" class="img-fluid lazy logo-dark" src="{{asset
-  "images/logo-dark.png"}}" /> <img alt="{{@site.title}}" class="img-fluid lazy
-  logo-light" src="{{asset "images/logo-light.png"}}" />
-  <!-- SINGLE LOGO 
-        <img alt="{{@site.title}}" class="img-fluid lazy" src="{{@site.logo}}" />
+    <img alt="{{@site.title}}" class="img-fluid lazy logo-dark" src="{{asset"images/logo-dark.png"}}" />
+    <img alt="{{@site.title}}" class="img-fluid lazy logo-light" src="{{asset "images/logo-light.png"}}" />
+    <!-- SINGLE LOGO 
+      <img alt="{{@site.title}}" class="img-fluid lazy" src="{{@site.logo}}" />
     -->
 </a>
 ```
