@@ -1,5 +1,7 @@
 - label: "Introduction"
   link: "/"
+- label: "FAQ"
+  link: "/faq"
 - label: Valkyrie
   items:
     - label: "Features"
