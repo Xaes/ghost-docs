@@ -39,6 +39,6 @@ module.exports = {
                 siteUrl: `https://ghost.xaes.dev`,
             },
         },
-        `gatsby-plugin-offline`,
+        `gatsby-plugin-remove-serviceworker`,
     ],
 };
